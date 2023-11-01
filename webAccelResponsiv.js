@@ -17,10 +17,10 @@ let img;
 
 function preload(){
     if(rystet<2){
-        img=loadImage('billede/stone.jpg');
+        img=loadImage('stone.jpg');
     }
     if (rystet>2){
-    img=loadImage('billede/shu.jpg');
+    img=loadImage('shu.jpg');
 }
 }
 
