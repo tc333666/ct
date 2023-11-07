@@ -56,7 +56,7 @@ function draw() {
         y--;
     if (y >= height || y <= 0)
         ned = !ned;
-    if (accelerationX > 700) {
+    if (accelerationX > 70) {
         r = random(0, 256);
         g = random(0, 256);
         b = random(0, 256);
