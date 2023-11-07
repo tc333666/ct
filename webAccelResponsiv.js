@@ -17,11 +17,11 @@ let img;
 
 function preload(){
     if(rystet<2){
-        img=loadImage('billede/stone.jpg');
+        img=loadImage('stone.jpg');
     }
     if (rystet>2){
-    img=loadImage('billede/shu.jpg');
-}
+    img=loadImage('shu.jpg');
+    }
 }
 
 
@@ -64,7 +64,8 @@ function draw() {
         ned = !ned;
         rystet++;
     }
-text('accel: ' + str(accelerationX), 50, height - 150); 
+
+//text('accel: ' + str(accelerationX), 50, height - 150); 
 text('rystet: ' + str(rystet), 50, height - 100);
 text('flyttet: ' + str(flyttet), 50, height - 50);
 }
