@@ -13,15 +13,12 @@ let y = 10; let r = 200; g = 180; b = 0;
 let ned = true;
 let rystet = 0;
 let flyttet = 0;
-let img;
+let images = [];
 
 function preload(){
-    if(rystet<2){
-        img=loadImage('stone.jpg');
-    }
-    if (rystet>2){
-    img=loadImage('shu.jpg');
-    }
+    images.push(loadImage('stone.jpg'));
+    images.push(loadImage('shu.jpg'));
+    images.push(loadImage('stone2.jpg'));
 }
 
 
@@ -47,7 +44,7 @@ function setup() {
 }
 
 function draw() {
-    background(img);
+    background(images[0]);
     strokeWeight(10);
     ellipse(width / 2, y, 50);
     if (ned)
