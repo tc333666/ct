@@ -64,7 +64,7 @@ function draw() {
         ned = !ned;
         rystet++;
     }
-    
+text('accel: ' + str(accelerationX)); 
 text('rystet: ' + str(rystet), 50, height-100);
 text('flyttet: ' + str(flyttet),50, height-50);
 }
