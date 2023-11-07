@@ -44,7 +44,7 @@ function setup() {
 }
 
 function draw() {
-    background(images[0]);
+    background(images[parseInt(rystet / 100)]);
     strokeWeight(10);
     ellipse(width / 2, y, 50);
     if (ned)
